@@ -16,15 +16,17 @@ public class Main {
         n = inp.nextInt();
 
         for (int i = 1; i <= n; i++){
-            System.out.print(i + " .Sayıyı giriniz : ");
+            System.out.print(i + " .Sayıyı giriniz : ");        // Kullanıcıdan sayıları isteyelim
             number = inp.nextInt();
 
+            // Minimum ve Maksimum değerleri number'a bağlıyoruz çünkü bir değeri olması gerekiyor
             if (entryIf) {
                 maxValue = number;
-                 minValue = number;
+                 minValue = number; // Burda bağlıyoruz
 
-                 entryIf = false;
+                 entryIf = false; // Bağladıktan sonra bu döngüden çıkmasını sağlıyoruz.
             }
+            // Minimum ve maximum değerleri bulalım
             if (number > maxValue){
                 maxValue = number;
             } else if (number < minValue) {
@@ -32,8 +34,8 @@ public class Main {
             }
         }
 
-        System.out.println("Max değer : " +maxValue);
-        System.out.println("Min değer : " +minValue);
+        System.out.println("Max değer : " + maxValue);
+        System.out.println("Min değer : " + minValue);
 
     }
 }
