@@ -6,8 +6,7 @@ public class Main {
 
         int n1;
         double n2;
-        int number1 = 0;
-        double number2 = 0;
+
 
         Scanner inp = new Scanner(System.in);
 
